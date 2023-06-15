@@ -1,6 +1,11 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body, html {
+    margin: 0;
+    padding: 0;
     border-collapse: collapse;
     width: 100%;
     height: 100vh;
@@ -33,12 +38,14 @@ body, html {
 }
 
 #preloader{
+    margin: -8px;
     background: #000;
     opacity: 0;
     width: 100%;
-    height: 100vh;
-    position: fixed;
+    height: 100%;
+    position: absolute;
     z-index: 100; /*stack order*/
+    display: fixed;
     animation: linear loading-complete 2.1s;
 }
 
@@ -51,13 +58,14 @@ body, html {
 .progress{
     stroke:white;
     fill:none;
-    stroke-width: 6%;
-    animation: ease-in-out loading 1.5s;
+    stroke-width: 2%;
+    animation: ease-in-out loading 2.5s;
     animation-iteration-count: 1;
     stroke-dasharray: 629;/*2pi*/
     stroke-dashoffset: 0;
 
 }
+
 @keyframes loading {
     from {
         stroke-dashoffset: 629
@@ -68,7 +76,7 @@ body, html {
     }
 }
 
-#loading-circle {
+#loading-circle{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -77,18 +85,41 @@ body, html {
     text-align: center;
     opacity: 0;
     animation: linear loading-complete 1.8s;
+    backdrop-filter: blur(0px);
 }
+
 @keyframes loading-complete {
     from {
         opacity: 1
     }
 
     83.33%{
-        opacity: 1
+        opacity: 1;
+        backdrop-filter: blur(0px);
     }
 
     to {
-        opacity: 0
+        opacity: 0;
+        backdrop-filter: blur(10px);
     }
 }
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap')
+

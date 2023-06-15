@@ -25,3 +25,8 @@
 //     }
 //   }
 
+
+setTimeout(() => {
+    const elem = document.getElementById("preloader");
+    elem.parentNode.removeChild(elem);
+}, 2100);
