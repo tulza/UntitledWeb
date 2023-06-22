@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body, html {
@@ -13,22 +14,8 @@ body, html {
     font-family: 'Spartan', sans-serif
 }
 
-.spinner {
-    animation: linear mySpinner 3s;
-    animation-iteration-count: infinite;
-}
-
-*{
-    overflow: hidden;
-}
-@keyframes mySpinner {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+h1{
+    font-family: 'Spartan';
 }
 
 #box {
@@ -49,33 +36,6 @@ body, html {
     animation: linear loading-complete 2.1s;
 }
 
-.track{
-    stroke:lightgray;
-    fill:none
-
-}
-
-.progress{
-    stroke:white;
-    fill:none;
-    stroke-width: 2%;
-    animation: ease-in-out loading 2.5s;
-    animation-iteration-count: 1;
-    stroke-dasharray: 629;/*2pi*/
-    stroke-dashoffset: 0;
-
-}
-
-@keyframes loading {
-    from {
-        stroke-dashoffset: 629
-    }
-
-    to {
-        stroke-dashoffset: 0
-    }
-}
-
 #loading-circle{
     position: fixed;
     top: 50%;
@@ -88,83 +48,5 @@ body, html {
     backdrop-filter: blur(0px);
 }
 
-@keyframes loading-complete {
-    from {
-        opacity: 1
-    }
-
-    83.33%{
-        opacity: 1;
-        backdrop-filter: blur(0px);
-    }
-
-    to {
-        opacity: 0;
-        backdrop-filter: blur(10px);
-    }
-}
-
-.navbar{
-    height: 70px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    position: absolute;
-    align-self: center;
-    bottom: 0;
-}
-
-.navbar-nav{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    height: 100%;
-}
-
-.navbar-nav li{
-    padding: 100% 10%;
-
-}
-
-.navbar-nav li:hover {
-    background-color: #ddd;
-    color: black;
-    animation: hover-fade 0.5s;
-}
-
-.navbar-nav li:not(:hover) {
-    animation: cancel-hover-fade 0.5s;
-}
-
-.Head-Text{
-   padding-top: 20px;
-   font-size: 20px;
-   color: Black;
-}
-
-@keyframes hover-fade {
-    from {
-        background-color:black;
-        color: white'
-    }
-
-    to {
-        background-color:white;
-        color: black;
-    }
-}
-
-@keyframes cancel-hover-fade {
-    from {
-        background-color:white;
-        color: black;
-    }
-
-    to {
-        background-color:black;
-        color: white;
-    }
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
