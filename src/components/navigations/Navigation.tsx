@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <>
       <div className="absolute flex w-full justify-center gap-8 p-8">
-        <NavButton name="/" />
+        <NavButton name="asd" />
         <NavButton name="home" />
       </div>
     </>

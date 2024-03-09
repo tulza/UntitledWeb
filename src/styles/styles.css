@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --element: hsl(209, 23%, 22%);
-  --background: var(--gray);
-  --text: hsl(0, 0%, 100%);
-
-  --white: #ffffff;
-  --black: #1c1e1f;
-  --gray: #212425;
 }
 
 html,
