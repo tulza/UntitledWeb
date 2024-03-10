@@ -8,6 +8,7 @@ const PermaTestNavigation = () => {
         <Dot />
         <NavButton name="none" />
         <NavButton name="template" />
+        <NavButton name="card" />
         <NavButton name="home" />
         <Dot />
       </div>
@@ -19,7 +20,7 @@ const Dot = () => {
   return (
     <motion.div
       whileHover="hover"
-      className="aspect-square h-min rounded-full bg-black outline outline-1"
+      className="aspect-square h-min rounded-full bg-black outline outline-1 "
     >
       <motion.div
         className="aspect-square rounded-[inherit] bg-[inherit] p-4 outline outline-1 outline-white"
