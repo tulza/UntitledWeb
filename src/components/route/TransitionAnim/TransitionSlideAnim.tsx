@@ -4,7 +4,7 @@ const TransitionSlideAnim = () => {
     <>
       <motion.div
         style={{ transformOrigin: "bottom" }}
-        className="fixed z-[99] h-[100vh] w-[100vw] bg-white"
+        className="fixed z-[99] h-[100vh] w-[100vw] bg-black"
         transition={{ ease: "easeInOut", duration: 0.5 }}
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
@@ -12,7 +12,7 @@ const TransitionSlideAnim = () => {
       {/* EXIT */}
       <motion.div
         style={{ transformOrigin: "top" }}
-        className="fixed z-[99] h-[100vh] w-[100vw] bg-white"
+        className="fixed z-[99] h-[100vh] w-[100vw] bg-black"
         transition={{ ease: "easeInOut", duration: 0.5, delay: 0.4 }}
         initial={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}

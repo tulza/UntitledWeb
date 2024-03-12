@@ -1,10 +1,50 @@
+import { motion } from "framer-motion";
 import FHDContainer from "../Frame/FHDContainer";
 import { VarFloat } from "../FramerMotion/variant";
 import AnimatedText from "../Text/AnimatedText";
 import HomeNavigation from "../navigations/HomeNavigation";
+
 const Home = () => {
   return (
     <div>
+      <motion.div className="absolute left-10 top-[50%] h-min w-min -translate-y-[50%] bg-white">
+        <motion.div
+          className=" h-min w-min bg-white outline"
+          initial={{ y: "-50%", boxShadow: "#000 8px 8px 0px 4px" }}
+          whileHover={{ boxShadow: "#000 24px 6px 0px 16px" }}
+        >
+          <p className="verticleText Broetown py-10 text-[8rem]">3</p>
+        </motion.div>
+        <motion.div
+          className=" h-min w-min bg-white outline"
+          initial={{ y: "-50%", boxShadow: "#000 8px 8px 0px 4px" }}
+          whileHover={{ boxShadow: "#000 24px 6px 0px 16px" }}
+        >
+          <p className="verticleText Broetown py-10 text-[8rem]">1</p>
+        </motion.div>
+        <motion.div
+          className=" h-min w-min bg-white outline"
+          initial={{ y: "-50%", boxShadow: "#000 8px 8px 0px 4px" }}
+          whileHover={{ boxShadow: "#000 24px 6px 0px 16px" }}
+        >
+          <p className="verticleText Broetown py-10 text-[8rem]">0</p>
+        </motion.div>
+        <motion.div
+          className=" h-min w-min bg-white outline"
+          initial={{ y: "-50%", boxShadow: "#000 8px 8px 0px 4px" }}
+          whileHover={{ boxShadow: "#000 24px 6px 0px 16px" }}
+        >
+          <p className="verticleText Broetown py-10 text-[8rem]">5</p>
+        </motion.div>
+        <motion.div
+          className=" h-min w-min bg-white outline"
+          initial={{ y: "-50%", boxShadow: "#000 8px 8px 0px 4px" }}
+          whileHover={{ boxShadow: "#000 24px 6px 0px 16px" }}
+        >
+          <p className="verticleText Broetown py-10 text-[8rem]">o</p>
+        </motion.div>
+      </motion.div>
+
       <FHDContainer>
         <div className="mt-4 flex w-[full] flex-col items-center text-3xl font-bold">
           <AnimatedText
@@ -18,56 +58,13 @@ const Home = () => {
             mode="letter"
             variant={VarFloat}
           />
-          <p className="text-base">by Tulza</p>
         </div>
         <div className="my-8 grid w-full place-items-center">
-          <HomeNavigation />
+          <HomeNavigation className="mb-8" />
+          <p className="Broetown text-5xl">qOzOb</p>
         </div>
+        <img src="" alt="" />
       </FHDContainer>
-      <div className="grid w-full grid-flow-col grid-cols-6 items-center gap-16 px-[100px]">
-        <div className="border-1 border ">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-        <div className="border-1 h-[400px] border">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-        <div className="border-1 h-[600px] border">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-        <div className="border-1 border ">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-        <div className="border-1 h-[300px] border">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-        <div className="border-1 h-[400px] border">
-          <p className="text-[1.2em]">
-            Harnessing the power of cutting-edge web technologies to create
-            innovative digital experiences that are both intuitive and
-            aesthetically pleasing.
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

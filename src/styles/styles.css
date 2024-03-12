@@ -18,3 +18,7 @@ html {
 .grainy {
   filter: url(./grain.svg);
 }
+
+.verticleText {
+  writing-mode: vertical-lr;
+}

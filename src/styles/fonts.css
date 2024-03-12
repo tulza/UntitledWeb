@@ -1,3 +1,18 @@
 html {
   font-family: "Kollektif";
 }
+
+.Broetown {
+  font-family: "Broetown Signature";
+}
+
+.Kollektif {
+  font-family: "Kollektif";
+}
+@font-face {
+  font-family: "Broetown Signature";
+  src: url("./broetown-signature.broetownsignatureregular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,11 +1,12 @@
+import clsx from "clsx";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const HomeNavigation = () => {
+const HomeNavigation = ({ className }: { className?: string }) => {
   return (
-    <div className="flex gap-4">
-      <Button label="About me." link="about" />
-      <Button label="Why?" link="why" />
+    <div className={clsx("flex gap-4", `${className}`)}>
+      <Button label="What's" link="hey" />
+      <Button label="Wrong?" link="hey" />
     </div>
   );
 };
