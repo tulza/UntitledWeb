@@ -3,10 +3,13 @@ import FHDContainer from "../Frame/FHDContainer";
 import { VarFloat } from "../FramerMotion/variant";
 import AnimatedText from "../Text/AnimatedText";
 import HomeNavigation from "../navigations/HomeNavigation";
+import { Traffic } from "@/assets/indexImg";
+import LoremIpsomText from "../Text/LoremIpsomText";
+import SceneTest from "../Canvas/SceneTest.jsx";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <motion.div className="absolute left-10 top-[50%] h-min w-min -translate-y-[50%] bg-white">
         <motion.div
           className=" h-min w-min bg-white outline"
@@ -60,11 +63,16 @@ const Home = () => {
           />
         </div>
         <div className="my-8 grid w-full place-items-center">
-          <HomeNavigation className="mb-8" />
+          {/* <HomeNavigation className="mb-8" /> */}
           <p className="Broetown text-5xl">qOzOb</p>
         </div>
-        <img src="" alt="" />
       </FHDContainer>
+      <div className="flex w-[100vw] justify-center">
+        <div className="flex w-[1600px] flex-col items-center">
+          <img src={Traffic} className="w-[800px] grayscale-[1]" />
+          <SceneTest />
+        </div>
+      </div>
     </div>
   );
 };

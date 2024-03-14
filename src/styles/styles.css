@@ -7,11 +7,11 @@
 
 html,
 #root {
-  @apply h-[100vh] w-[100vw];
+  @apply h-[100vh] w-[100vw] overflow-x-hidden;
 }
 
 html {
-  background-color: var(--background);
+  background-color: black;
   color: var(--text);
 }
 

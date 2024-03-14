@@ -31,7 +31,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "./src/assets/index.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "typeRoots": ["../node_modules/@types", "../@types"]
 }
