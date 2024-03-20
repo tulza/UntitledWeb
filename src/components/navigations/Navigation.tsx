@@ -8,6 +8,7 @@ const Navigation = () => {
         <NavButton name="asd" />
         <NavButton name="home" />
       </div>
+      
     </>
   );
 };
