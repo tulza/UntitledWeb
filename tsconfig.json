@@ -7,13 +7,15 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/components/pages/*"],
+      "@routes/*": ["./src/components/route/*"],
+      "@text/*": ["./src/components/text/*"],
       "@styles/*": ["./src/styles/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@entities/*": ["./src/entities/*"],
       "@api/*": ["./src/api/*"],
-      "@pages/*": ["./src/components/pages/*"]
+      "@components/*": ["./src/components/*"],
+      "@/*": ["src/*"]
       // "@template/*": ["src/*"],
     },
 

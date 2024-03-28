@@ -1,21 +1,17 @@
-import { motion } from "framer-motion";
-import FHDContainer from "../Frame/FHDContainer";
 import { VarFloat } from "../FramerMotion/variant";
 import AnimatedText from "../Text/AnimatedText";
-import { Traffic } from "@/assets/indexImg";
-import SceneTest from "../Canvas/SceneTest.jsx";
+import FloatWrapper from "@components/Wrapper/FloatDivWrapper";
+import { motion } from "framer-motion";
+import ExploreButton from "./Home Component/ExploreButton";
 
 const Home = () => {
-  /*glsl */ `
-  void main() {
-    
-  }`;
   return (
-    <div className="">
-      <FHDContainer>
-        <div className="mt-4 flex w-[full] flex-col items-center text-3xl font-bold">
+    <div className="h-full">
+      <div className="flex h-[100%] max-h-[1080px] w-full flex-col items-center justify-center ">
+        <div className=" mt-4 flex w-[full] flex-col items-center ">
           <AnimatedText
             text="Untitled Web"
+            className="aukera text-[4rem]"
             transition={{
               ease: "easeInOut",
               duration: 4,
@@ -25,18 +21,12 @@ const Home = () => {
             mode="letter"
             variant={VarFloat}
           />
-        </div>
-        <div className="my-8 grid w-full place-items-center">
-          {/* <HomeNavigation className="mb-8" /> */}
-          <p className="Broetown text-5xl">qOzOb</p>
-        </div>
-      </FHDContainer>
-      <div className="flex h-[200vh] w-[100vw] justify-center">
-        <div className="flex w-[1600px] flex-col items-center">
-          <img src={Traffic} className="w-[800px] grayscale-[1]" />
-          <SceneTest />
+          <FloatWrapper className="mt-4">
+            <ExploreButton />
+          </FloatWrapper>
         </div>
       </div>
+      <hr className="border-black"></hr>
     </div>
   );
 };

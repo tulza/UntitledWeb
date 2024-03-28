@@ -9,10 +9,42 @@ html {
 .Kollektif {
   font-family: "Kollektif";
 }
+
+.Proxima {
+  font-family: Proxima Nova;
+}
+
+.aukera {
+  font-family: aukera;
+}
+
 @font-face {
   font-family: "Broetown Signature";
-  src: url("./broetown-signature.broetownsignatureregular.ttf")
+  src: url("./fonts/broetown-signature.broetownsignatureregular.ttf")
     format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Proxima Nova */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/proximanova_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/proximanova_bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* aukera */
+@font-face {
+  font-family: "aukera";
+  src: url("./fonts/aukera.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
