@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { VarFloat } from "../FramerMotion/variant";
 
-console.log(VarFloat.animate);
 const FloatWrapper = ({
   children,
   className,

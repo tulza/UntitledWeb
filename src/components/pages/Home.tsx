@@ -3,6 +3,7 @@ import AnimatedText from "../Text/AnimatedText";
 import FloatWrapper from "@components/Wrapper/FloatDivWrapper";
 import { motion } from "framer-motion";
 import ExploreButton from "./Home Component/ExploreButton";
+import NavigationBar from "./Home Component/NavigationBar";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
           <FloatWrapper className="mt-4">
             <ExploreButton />
           </FloatWrapper>
+          <NavigationBar className="mt-12" />
         </div>
       </div>
       <hr className="border-black"></hr>
