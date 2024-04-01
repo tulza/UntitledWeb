@@ -4,7 +4,7 @@ const ExploreButton = () => {
   return (
     // FIXME: unreadable Lol
     <motion.div
-      className="relative flex cursor-pointer select-none overflow-hidden whitespace-nowrap rounded-full border-2 border-black"
+      className="relative flex cursor-pointer select-none overflow-hidden whitespace-nowrap rounded-full border-2 border-white"
       initial={{
         padding: "2.5rem",
         paddingTop: "0.25rem",
@@ -16,20 +16,20 @@ const ExploreButton = () => {
       }}
     >
       <motion.div
-        initial={{ color: "#000" }}
-        variants={{ hover: { color: "#fff" } }}
+        initial={{ color: "#fff" }}
+        variants={{ hover: { color: "#000" } }}
       >
         explore
       </motion.div>
       <motion.div
-        className=" overflow-hidden text-white"
+        className=" overflow-hidden text-black"
         initial={{ width: 0 }}
         variants={{ hover: { width: "min-content" } }}
       >
         &emsp;⮟
       </motion.div>
       <motion.div
-        className="absCenter -z-10 aspect-square w-0 rounded-full bg-black"
+        className="absCenter -z-10 aspect-square w-0 rounded-full bg-white"
         variants={{ hover: { width: 200 } }}
       />
     </motion.div>

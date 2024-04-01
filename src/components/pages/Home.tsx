@@ -8,10 +8,10 @@ import SwitchingBackground from "./Home Component/SwitchingBackground";
 
 const Home = () => {
   return (
-    <div className="relative h-full">
+    <div className="relative h-full ">
       <div className="relative z-50 flex h-[100%] max-h-[1080px] w-full flex-col items-center justify-center overflow-hidden">
         <SwitchingBackground />
-        <div className=" mt-4 flex w-[full] flex-col items-center ">
+        <div className=" z-50 mt-4 flex w-[full] flex-col items-center text-white">
           <AnimatedText
             text="Untitled Web"
             className="aukera text-[4rem]"
@@ -29,7 +29,7 @@ const Home = () => {
           </FloatWrapper>
           <div className="mt-12 flex items-center justify-center">
             <motion.hr
-              className=" z-10 border-black"
+              className=" z-10 border-white"
               initial={{ width: 0 }}
               animate={{ width: 150 }}
               transition={{ delay: 0.5 }}
@@ -43,7 +43,7 @@ const Home = () => {
               or navigate here
             </motion.div>
             <motion.hr
-              className=" z-10 border-black"
+              className=" z-10 border-white"
               initial={{ width: 0 }}
               animate={{ width: 150 }}
               transition={{ delay: 0.5 }}

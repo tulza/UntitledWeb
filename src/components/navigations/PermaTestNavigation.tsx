@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PermaTestNavigation = () => {
   return (
     <>
-      <div className="fixed bottom-4 flex h-min w-full select-none justify-center gap-8">
+      <div className="fixed bottom-4 z-50 flex h-min w-full select-none justify-center gap-8">
         <NavButton name="none" />
         <NavButton name="home" />
       </div>
