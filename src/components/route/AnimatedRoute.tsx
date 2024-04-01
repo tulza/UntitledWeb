@@ -1,4 +1,3 @@
-import Template from "@components/pages/Template";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PageNotFound from "../pages/PageNotFound";
 import WebsiteTransitionAnimation from "./TransitionAnim/WebsiteTransitionAnimation";
@@ -13,7 +12,6 @@ const AnimatedRoute = () => {
         <WebsiteTransitionAnimation key={location.pathname}>
           <Routes location={location}>
             <Route path="/home" element={<Home />} />
-            <Route path="/template" element={<Template />} />
             <Route path="/*" element={<PageNotFound />} />
           </Routes>
         </WebsiteTransitionAnimation>

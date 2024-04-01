@@ -22,14 +22,14 @@ const ExploreButton = () => {
         explore
       </motion.div>
       <motion.div
-        className=" text-white"
+        className=" overflow-hidden text-white"
         initial={{ width: 0 }}
         variants={{ hover: { width: "min-content" } }}
       >
         &emsp;⮟
       </motion.div>
       <motion.div
-        className="absCenterBottom -z-10 aspect-square w-0 rounded-full bg-black"
+        className="absCenter -z-10 aspect-square w-0 rounded-full bg-black"
         variants={{ hover: { width: 200 } }}
       />
     </motion.div>

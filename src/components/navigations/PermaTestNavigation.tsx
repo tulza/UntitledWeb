@@ -5,12 +5,8 @@ const PermaTestNavigation = () => {
   return (
     <>
       <div className="fixed bottom-4 flex h-min w-full select-none justify-center gap-8">
-        <Dot />
         <NavButton name="none" />
-        <NavButton name="template" />
-        <NavButton name="card" />
         <NavButton name="home" />
-        <Dot />
       </div>
     </>
   );
